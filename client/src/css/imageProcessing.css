@@ -21,7 +21,7 @@
 }
 
 .launch-container-p .launches-process {
-    min-height: 50vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     overflow-x: hidden;

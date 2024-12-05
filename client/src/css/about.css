@@ -26,6 +26,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-bottom: 10vh;
 }
 
 .about-data .future-btn {
@@ -38,7 +39,7 @@
     word-spacing: 0.5rem;
     padding: 0.6rem 2.5rem;
     border-radius: 0px;
-    margin-top: 1rem;
+    margin-top: 5rem;
     cursor: pointer;
     margin: 0 auto;
     position: relative;

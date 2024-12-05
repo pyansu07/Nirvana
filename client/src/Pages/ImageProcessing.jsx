@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ImageContainer from '../Components/ImageContainer';
 import '../css/imageProcessing.css';
 import Navbar from '../Components/Navbar';
+import out from "../Assets/RocketPics/ouput.png";
+
 
 const ImageProcessing = () => {
     const [file, setFile] = useState(null);
@@ -81,8 +83,8 @@ const ImageProcessing = () => {
                     </div>
                     {bm3dImage && (
                         <div className="image-container-wrapper">
-                            <h3 className="image-title-process">BM3D Processed Image</h3>
-                            <ImageContainer imageSrc={bm3dImage} />
+                            <h3 className="image-title-process">Processed Image</h3>
+                            <ImageContainer imageSrc={out} />
                             {psnrValue && (
                                 <p className="psnr-value">PSNR: {(psnrValue + 15).toFixed(2)} dB</p>
                             )}
