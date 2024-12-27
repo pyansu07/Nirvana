@@ -11,19 +11,72 @@ Welcome to the repository for our Smart India Hackathon (SIH) project! This repo
 - **Lakshit Khandelwal**
 - **Aditi Chandak**
 
-<!-- - **Shreyash Verma** - [Team Leader, ML Engineer, Researcher]
-- **Supratit Datta** - [Full Stack Developer, Designer, Project Manager,]
-- **Aryan Bhise** - [Data Scientist, ML Engineer, Researcher]
-- **Pyansu Nahak** - [Full Stack Developer, Researcher]
-- **Lakshit Khandelwal** - [UI/UX Designer, Support, Researcher]
-- **Aditi Chandak** - [Web Developer, Support] -->
+Nirvana is a cutting-edge space solutions agency dedicated to pioneering space research and missions. The project focuses on advancing space exploration technologies, including satellite imagery enhancement.
 
-<!--## 🛠️ Tech Stack-->
+## Features and Functionality
 
-<!--We have utilized a comprehensive range of technologies to bring our solution to life:-->
+- **User Authentication**: Sign up and log in using email and password or social media accounts (Google, GitHub).
+- **Image Processing**: Upload images for processing with BM3D denoising and view results.
+- **Dynamic Navigation**: Smooth scrolling and responsive navigation for an enhanced user experience.
+- **Interactive Timelines**: Display upcoming space missions through a vertical timeline component.
+- **Responsive Design**: Built with a mobile-first approach, ensuring usability across devices.
 
-<!--- **Frontend:** [React, HTML, CSS, JavaScript]-->
-<!--- **ML Models:** [TensorFlow, scikit-learn, Pandas, NumPy]-->
-<!--- **Backend:** [Flask, Node.js, Express]-->
-<!--- **Database:** [MongoDB]-->
-<!--- **Other Tools:** [Git, Vercel, Postman]-->
+  ## Technology Stack
+
+- **Frontend**: React, React Router, Framer Motion, GSAP
+- **Backend**: Flask, Flask-CORS
+- **Image Processing**: OpenCV, scikit-image, BM3D
+- **Styling**: CSS modules and responsive design techniques.
+
+  ## Installation Instructions
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/pyansu07/Nirvana.git
+   cd Nirvana
+   ```
+
+2. **Install frontend dependencies**:
+   ```bash
+   cd client
+   npm install
+   ```
+
+3. **Setup the backend**:
+   - Navigate to the server directory:
+     ```bash
+     cd server/models/Image-Enhanced
+     ```
+   - Install the required Python packages:
+     ```bash
+     pip install Flask flask-cors opencv-python scikit-image bm3d
+     ```
+
+4. **Configure Firebase**:
+   - Create a Firebase project and add your web app.
+   - Replace the Firebase configuration in `client/src/utils/firebaseConfig.jsx` with your project's credentials.
+
+5. **Run the backend**:
+   ```bash
+   python app.py
+   ```
+
+6. **Run the frontend**:
+   ```bash
+   cd client
+   npm start
+   ```
+
+## Usage Guide
+
+- Navigate to `http://localhost:3000` in your web browser.
+- Create an account or log in to access the main features.
+- Use the "Image Processing" section to upload images and see the processed results.
+- Explore upcoming missions in the "Launches" section.
+
+## API Documentation
+
+- **POST /api/process-image**: Upload an image for processing.
+  - **Request**: Form-data containing the image file.
+  - **Response**: JSON object containing the original and processed image URLs along with the PSNR value.
+
