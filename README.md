@@ -4,7 +4,8 @@ Welcome to the repository for our Smart India Hackathon (SIH) project! This repo
 
 ## 👥 Team Members
 
-- **Shreyash Verma** 
+- **Shreyash Verma**
+
 - **Supratit Datta**
 - **Aryan Bhise**
 - **Pyansu Nahak**
@@ -27,6 +28,8 @@ Nirvana is a cutting-edge space solutions agency dedicated to pioneering space r
 - **Backend**: Flask, Flask-CORS
 - **Image Processing**: OpenCV, scikit-image, BM3D
 - **Styling**: CSS modules and responsive design techniques.
+## 🗺️ Flowchart
+![final_diagram drawio](https://github.com/user-attachments/assets/8540c74a-bbb7-4d60-9e04-86667b19db42)
 
   ## Installation Instructions
 
